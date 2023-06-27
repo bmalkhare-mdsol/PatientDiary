@@ -21,7 +21,7 @@ class LoginViewConfiguratorImpl:  LoginViewConfigurator {
     func configure() {
         let router = LoginRouterImpl(viewController: viewController)
         let usecase = LoginUsecaseImpl()
-
+        
         let presenter = LoginPresenterImpl(router: router, usecase: usecase)
         viewController.presenter = presenter
     }

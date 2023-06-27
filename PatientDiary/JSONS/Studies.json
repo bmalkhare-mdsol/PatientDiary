@@ -1,0 +1,52 @@
+{
+    "studies": [
+        {
+            "name": "Control study",
+            "iconName": "Control study",
+            "id": "1",
+            "userID": "",
+            "forms": [
+                {
+                    "id": "1",
+                    "type": "Vaccination",
+                    "name": "Vaccination Date",
+                    "value": "",
+                    "isVisited": false,
+                    "category_slug": "VaccinationDate"
+                },
+                {
+                    "id": "2",
+                    "type": "VaccinationEffect",
+                    "name": "Post Vaccination Effects",
+                    "value": "",
+                    "isVisited": false,
+                    "category_slug": "PostVaccinationEffects"
+                }
+            ]
+        },
+        {
+            "name": "Test Study",
+            "iconName": "Test Study",
+            "id": "2",
+            "userID": "",
+            "forms": [
+                {
+                    "id": "1",
+                    "type": "Vaccination",
+                    "name": "Vaccination Date",
+                    "value": "",
+                    "isVisited": false,
+                    "category_slug": "VaccinationDate"
+                },
+                {
+                    "id": "2",
+                    "type": "VaccinationEffect",
+                    "name": "Post Vaccination Effects",
+                    "value": "",
+                    "isVisited": false,
+                    "category_slug": "PostVaccinationEffects"
+                }
+            ]
+        }
+    ]
+}

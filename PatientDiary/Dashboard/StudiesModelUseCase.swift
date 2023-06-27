@@ -12,7 +12,7 @@ protocol StudiesModelUseCase{
     func getStudiesModelForPerson(person: Person) -> StudiesModel?
     func isUserAlreadyExist(emailID: String) -> Bool
     func saveModelInDB(studies: StudiesModel, person: Person)
-
+    
 }
 
 class StudiesModelUseCaseImpl: StudiesModelUseCase {
@@ -33,7 +33,7 @@ class StudiesModelUseCaseImpl: StudiesModelUseCase {
     }
     
     func isUserAlreadyExist(emailID: String) -> Bool {
-       return dbHelper.isUserAlreadyExist(emailID: emailID)
+        return dbHelper.isUserAlreadyExist(emailID: emailID)
     }
     
     func updateStudiesModelInDB(studies: StudiesModel, person: Person) {

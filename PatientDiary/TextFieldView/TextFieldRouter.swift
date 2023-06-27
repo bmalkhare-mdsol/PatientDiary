@@ -7,9 +7,7 @@
 
 import Foundation
 import UIKit
-protocol TextFieldRouter {
-    func navigateToNextScreen()
-}
+protocol TextFieldRouter {}
 
 class TextFieldRouterImpl: TextFieldRouter {
     
@@ -19,10 +17,6 @@ class TextFieldRouterImpl: TextFieldRouter {
         self.viewController = viewController
     }
     
-    func navigateToNextScreen() {
-        
-    }
-
-   
+    func navigateToNextScreen() {}
     
 }

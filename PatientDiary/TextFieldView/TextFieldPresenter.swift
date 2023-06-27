@@ -22,7 +22,6 @@ enum Vaccination: CaseIterable {
     case temporary
     case severe
 
-    
     func getTitle() -> String {
         switch self {
         case .mild:
@@ -45,7 +44,7 @@ protocol TextFieldPresenter {
     func updateVaccinationDay(text: String)
     func updateEffects(effect: Vaccination)
     func getFormType() -> FormType
-    func getNavigationHeaderTitle() -> String 
+    func getNavigationHeaderTitle() -> String
 }
 
 protocol TextFieldView {
@@ -78,7 +77,7 @@ class TextFieldPresenterImpl: TextFieldPresenter {
     func getFormType() -> FormType {
         return self.forms[currentForm].formType
     }
-
+    
     
     func updateVaccinationDay(text: String) {
         self.forms[currentForm].value = text
@@ -122,7 +121,6 @@ class TextFieldPresenterImpl: TextFieldPresenter {
         return self.forms[currentForm].name
     }
     
-    
     func nextPressed() {
         
         if currentForm >= totalForm  {
@@ -133,7 +131,6 @@ class TextFieldPresenterImpl: TextFieldPresenter {
         self.delegate?.updateForms(form: forms, indexPath: indexPath)
         currentForm += 1
         self.view.updateView()
-
     }
     
     func updateEffects(effect: Vaccination) {

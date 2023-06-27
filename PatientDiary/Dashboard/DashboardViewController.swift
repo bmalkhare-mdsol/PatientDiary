@@ -22,9 +22,9 @@ class DashboardViewController: UIViewController {
         presenter.viewWillAppear()
         let info = presenter.getNotificationInfo()
         LocatNotification.shared.sendNotification(title: info.title, body: info.body)
-
+        
     }
-   
+    
     override func viewWillAppear(_ animated: Bool) {
         presenter.viewWillAppear()
     }
@@ -75,12 +75,12 @@ extension DashboardViewController: DashboardView {
     func reloadData() {
         self.studiesTableView.reloadData()
     }
-
+    
 }
 extension DashboardViewController: UNUserNotificationCenterDelegate {
-
-    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
     
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        
         let content = UNMutableNotificationContent()
         counter += 1
         let info = presenter.getNotificationInfo()
@@ -95,5 +95,5 @@ extension DashboardViewController: UNUserNotificationCenterDelegate {
         }
         completionHandler([.banner, .list, .badge])
     }
-
+    
 }

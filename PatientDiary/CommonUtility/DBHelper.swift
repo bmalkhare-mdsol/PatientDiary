@@ -16,10 +16,10 @@ class DBHelper
         db = openDatabase()
         createTable()
     }
-
+    
     let dbPath: String = "patient.sqlite"
     var db:OpaquePointer?
-
+    
     func openDatabase() -> OpaquePointer?
     {
         let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
@@ -36,7 +36,7 @@ class DBHelper
             return db
         }
     }
-  
+    
     
     func createTable() {
         let createTableString = "CREATE TABLE IF NOT EXISTS patient(email TEXT PRIMARY KEY,name TEXT,jsonString TEXT);"
@@ -54,7 +54,7 @@ class DBHelper
         }
         sqlite3_finalize(createTableStatement)
     }
-  
+    
     func isUserAlreadyExist(emailID: String) -> Bool {
         let patients = read()
         for p in patients
@@ -69,7 +69,7 @@ class DBHelper
     
     func insert(email:String, name:String, jsonString:String = "None")
     {
-       
+        
         let insertStatementString = "INSERT INTO patient (email, name, jsonString) VALUES (?, ?, ?);"
         var insertStatement: OpaquePointer? = nil
         if sqlite3_prepare_v2(db, insertStatementString, -1, &insertStatement, nil) == SQLITE_OK {
@@ -111,18 +111,17 @@ class DBHelper
         sqlite3_finalize(queryStatement)
         return psns
     }
-
-
+    
     func update(person: Person, jsonString: String) {
         let query = "UPDATE patient SET jsonString = '\(jsonString)' WHERE email = '\(person.emailID)';"
-            var statement : OpaquePointer? = nil
-            if sqlite3_prepare_v2(db, query, -1, &statement, nil) == SQLITE_OK{
-                if sqlite3_step(statement) == SQLITE_DONE {
-                    print("Data updated success")
-                }else {
-                    print("Data is not updated in table")
-                }
+        var statement : OpaquePointer? = nil
+        if sqlite3_prepare_v2(db, query, -1, &statement, nil) == SQLITE_OK{
+            if sqlite3_step(statement) == SQLITE_DONE {
+                print("Data updated success")
+            }else {
+                print("Data is not updated in table")
             }
         }
+    }
 }
 

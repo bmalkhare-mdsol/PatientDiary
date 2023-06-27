@@ -11,13 +11,13 @@ import GoogleSignIn
 class ViewController: UIViewController {
     var configurator:  LoginViewConfigurator?
     var presenter: LoginPresenter!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configurator = LoginViewConfiguratorImpl(viewController: self)
         configurator?.configure()
     }
-
+    
     @IBAction func loginTapped(_ sender: UIButton) {
         GIDSignIn.sharedInstance.signIn(withPresenting: self) { signInResult, error in
             guard error == nil else { return }
@@ -26,7 +26,7 @@ class ViewController: UIViewController {
                 self.presenter.loginPressed(person: Person(name: name, emailID: email, url: imageUrl, jsonString: ""))
             }
             
-          }
+        }
     }
     
 }

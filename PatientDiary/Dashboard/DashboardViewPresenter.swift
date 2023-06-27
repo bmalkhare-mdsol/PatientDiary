@@ -41,7 +41,7 @@ class DashboardViewPresenterImpl: DashboardViewPresenter {
     var usecase: StudiesModelUseCase
     var view: DashboardView
     var isAllCellsVisited: Bool = false
-
+    
     init(router: DashboardViewRouter, model: StudiesModel, person: Person, usecase: StudiesModelUseCase, view: DashboardView) {
         self.router = router
         self.model = model
@@ -67,7 +67,7 @@ class DashboardViewPresenterImpl: DashboardViewPresenter {
     func viewWillAppear(){
         getDataFromDB()
     }
-
+    
     func getStudyModel(at index: Int)  -> Studies? {
         return model.studies[index]
     }
@@ -96,7 +96,7 @@ class DashboardViewPresenterImpl: DashboardViewPresenter {
     func isCellInteractive(index: IndexPath) -> Bool {
         let studiesList = model.studies
         let count = studiesList.filter({$0.isAllElementVisited}).count
-
+        
         if count == index.row || index.row < count {
             return true
         }
@@ -115,6 +115,6 @@ class DashboardViewPresenterImpl: DashboardViewPresenter {
             usecase.saveModelInDB(studies: model, person: person)
         }
     }
-
-
+    
+    
 }

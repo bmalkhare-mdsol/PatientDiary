@@ -15,7 +15,6 @@ class LoginPresenterImpl: LoginPresenter {
     var router: LoginRouter
     let usecase: LoginUsecase
 
-    
     init(router: LoginRouter, usecase: LoginUsecase) {
         self.router = router
         self.usecase = usecase

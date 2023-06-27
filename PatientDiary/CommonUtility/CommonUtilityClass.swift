@@ -12,12 +12,11 @@ struct StoryBordIds{
     static var main = "Main"
     static var dashboardViewController = "DashboardViewController"
     static var textFieldController = "TextFieldController"
-   
+    
 }
 
-
 class CommonUtility{
-   public static func getViewController(storyboardName: String, bundleID: String)  -> UIViewController? {
+    public static func getViewController(storyboardName: String, bundleID: String)  -> UIViewController? {
         return UIStoryboard.init(name: storyboardName, bundle: Bundle.main).instantiateViewController(withIdentifier: bundleID)
     }
 }

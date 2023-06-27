@@ -24,8 +24,8 @@ class LocatNotification {
                 self.scheduleLocalNotification(title: title, body: body)
             case .denied:
                 print("Application Not Allowed to Display Notifications")
-            
-             default:
+                
+            default:
                 break
             }
         }

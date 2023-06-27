@@ -11,7 +11,7 @@ class Person {
     var emailID: String = ""
     var imageURL: URL?
     var jsonString: String = ""
-
+    
     init(name: String, emailID: String, url: URL?, jsonString: String)
     {
         self.name = name

@@ -10,11 +10,10 @@ import UIKit
 class TextFieldController: UIViewController {
     var configurator:  TextFieldConfigurator?
     let datePicker = UIDatePicker()
-
+    
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var inputeTextView: UITextField!
     @IBOutlet weak var infoLabel: UILabel!
-    
     var presenter: TextFieldPresenter!
     
     override func viewDidLoad() {
@@ -23,12 +22,11 @@ class TextFieldController: UIViewController {
         inputeTextView.addTarget(self, action: #selector(myTargetFunction), for: .touchDown)
         nextButton.layer.cornerRadius = 8
         
-
+        
     }
     @objc func myTargetFunction(textField: UITextField) {
-    
-         presenter.getFormType() == .date ?
-            self.showAlert() : self.showMenu(textField: inputeTextView)
+        presenter.getFormType() == .date ?
+        self.showAlert() : self.showMenu(textField: inputeTextView)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -53,10 +51,10 @@ extension TextFieldController: TextFieldView {
         }
         nextButton.setTitle(presenter.getButtonText(), for: .normal)
         nextButton.backgroundColor = presenter.getTextValue().isEmpty ? .lightGray : .blue
-        nextButton.isEnabled = !presenter.getTextValue().isEmpty 
-
+        nextButton.isEnabled = !presenter.getTextValue().isEmpty
+        
     }
-
+    
 }
 extension TextFieldController {
     func showMenu(textField: UITextField){
@@ -67,7 +65,7 @@ extension TextFieldController {
             })
             alert.addAction(itemAction)
         }
-      
+        
         if let popoverController = alert.popoverPresentationController{
             popoverController.sourceView = textField
             popoverController.sourceRect = textField.bounds
