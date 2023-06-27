@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00653C0E79A35EB1CADAE8BD /* Pods_PatientDiaryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D80CE1AF7E24494052B54F1 /* Pods_PatientDiaryTests.framework */; };
 		274CD22C2A49473B009C57F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274CD22B2A49473B009C57F6 /* AppDelegate.swift */; };
 		274CD22E2A49473B009C57F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274CD22D2A49473B009C57F6 /* SceneDelegate.swift */; };
 		274CD2302A49473B009C57F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274CD22F2A49473B009C57F6 /* ViewController.swift */; };
@@ -16,6 +17,31 @@
 		274CD2432A49473D009C57F6 /* PatientDiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274CD2422A49473D009C57F6 /* PatientDiaryTests.swift */; };
 		274CD24D2A49473D009C57F6 /* PatientDiaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274CD24C2A49473D009C57F6 /* PatientDiaryUITests.swift */; };
 		274CD24F2A49473D009C57F6 /* PatientDiaryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274CD24E2A49473D009C57F6 /* PatientDiaryUITestsLaunchTests.swift */; };
+		274CD25D2A495335009C57F6 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274CD25C2A495335009C57F6 /* DashboardViewController.swift */; };
+		274CD25F2A495BF4009C57F6 /* DashboardViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274CD25E2A495BF4009C57F6 /* DashboardViewPresenter.swift */; };
+		274CD2612A495C15009C57F6 /* DashboardVieConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274CD2602A495C15009C57F6 /* DashboardVieConfigurator.swift */; };
+		274CD2632A495CFF009C57F6 /* DashboardViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274CD2622A495CFF009C57F6 /* DashboardViewRouter.swift */; };
+		274CD2662A495DFB009C57F6 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274CD2652A495DFB009C57F6 /* LoginRouter.swift */; };
+		274CD2682A495E0F009C57F6 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274CD2672A495E0F009C57F6 /* LoginPresenter.swift */; };
+		274CD26A2A496215009C57F6 /* LoginViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274CD2692A496215009C57F6 /* LoginViewConfigurator.swift */; };
+		274CD26C2A49626C009C57F6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274CD26B2A49626C009C57F6 /* Person.swift */; };
+		274CD26F2A4962E2009C57F6 /* CommonUtilityClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274CD26E2A4962E2009C57F6 /* CommonUtilityClass.swift */; };
+		274CD2762A496E96009C57F6 /* Studies.json in Resources */ = {isa = PBXBuildFile; fileRef = 274CD2752A496E96009C57F6 /* Studies.json */; };
+		274CD27B2A4971BA009C57F6 /* Studies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274CD27A2A4971BA009C57F6 /* Studies.swift */; };
+		274CD27D2A4973F7009C57F6 /* LoginUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274CD27C2A4973F7009C57F6 /* LoginUsecase.swift */; };
+		274CD27F2A497438009C57F6 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274CD27E2A497438009C57F6 /* DBHelper.swift */; };
+		274CD2852A497973009C57F6 /* StudyTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274CD2832A497973009C57F6 /* StudyTitleCell.swift */; };
+		274CD2862A497973009C57F6 /* StudyTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 274CD2842A497973009C57F6 /* StudyTitleCell.xib */; };
+		274CD2892A498203009C57F6 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274CD2882A498203009C57F6 /* ViewControllerExtension.swift */; };
+		274CD28C2A498489009C57F6 /* TextFieldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274CD28B2A498489009C57F6 /* TextFieldController.swift */; };
+		274CD28E2A4985A1009C57F6 /* TextFieldPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274CD28D2A4985A1009C57F6 /* TextFieldPresenter.swift */; };
+		274CD2902A4985AE009C57F6 /* TextFieldConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274CD28F2A4985AE009C57F6 /* TextFieldConfigurator.swift */; };
+		274CD2922A4985BE009C57F6 /* TextFieldRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274CD2912A4985BE009C57F6 /* TextFieldRouter.swift */; };
+		274CD2942A49F50F009C57F6 /* StudiesModelUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274CD2932A49F50F009C57F6 /* StudiesModelUseCase.swift */; };
+		274CD2962A4A841C009C57F6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274CD2952A4A841C009C57F6 /* Colors.swift */; };
+		274CD2982A4A8CCE009C57F6 /* LocalNotification .swift in Sources */ = {isa = PBXBuildFile; fileRef = 274CD2972A4A8CCE009C57F6 /* LocalNotification .swift */; };
+		AD8B037B5F5747CB5EB4E52A /* Pods_PatientDiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCBDFCB4980A00D75579AF2F /* Pods_PatientDiary.framework */; };
+		F2B0F5C852BDBF1B1385AFEF /* Pods_PatientDiary_PatientDiaryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 959172E7655B83DFB0920231 /* Pods_PatientDiary_PatientDiaryUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +62,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2474F29C080C8A1C10B2C44D /* Pods-PatientDiary-PatientDiaryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatientDiary-PatientDiaryUITests.debug.xcconfig"; path = "Target Support Files/Pods-PatientDiary-PatientDiaryUITests/Pods-PatientDiary-PatientDiaryUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		274CD2282A49473B009C57F6 /* PatientDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatientDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		274CD22B2A49473B009C57F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		274CD22D2A49473B009C57F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +76,38 @@
 		274CD2482A49473D009C57F6 /* PatientDiaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PatientDiaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		274CD24C2A49473D009C57F6 /* PatientDiaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientDiaryUITests.swift; sourceTree = "<group>"; };
 		274CD24E2A49473D009C57F6 /* PatientDiaryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientDiaryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		274CD25C2A495335009C57F6 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		274CD25E2A495BF4009C57F6 /* DashboardViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewPresenter.swift; sourceTree = "<group>"; };
+		274CD2602A495C15009C57F6 /* DashboardVieConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVieConfigurator.swift; sourceTree = "<group>"; };
+		274CD2622A495CFF009C57F6 /* DashboardViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewRouter.swift; sourceTree = "<group>"; };
+		274CD2652A495DFB009C57F6 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		274CD2672A495E0F009C57F6 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		274CD2692A496215009C57F6 /* LoginViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewConfigurator.swift; sourceTree = "<group>"; };
+		274CD26B2A49626C009C57F6 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		274CD26E2A4962E2009C57F6 /* CommonUtilityClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtilityClass.swift; sourceTree = "<group>"; };
+		274CD2752A496E96009C57F6 /* Studies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Studies.json; sourceTree = "<group>"; };
+		274CD27A2A4971BA009C57F6 /* Studies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Studies.swift; sourceTree = "<group>"; };
+		274CD27C2A4973F7009C57F6 /* LoginUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUsecase.swift; sourceTree = "<group>"; };
+		274CD27E2A497438009C57F6 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		274CD2802A497478009C57F6 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		274CD2832A497973009C57F6 /* StudyTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTitleCell.swift; sourceTree = "<group>"; };
+		274CD2842A497973009C57F6 /* StudyTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudyTitleCell.xib; sourceTree = "<group>"; };
+		274CD2882A498203009C57F6 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		274CD28B2A498489009C57F6 /* TextFieldController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldController.swift; sourceTree = "<group>"; };
+		274CD28D2A4985A1009C57F6 /* TextFieldPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldPresenter.swift; sourceTree = "<group>"; };
+		274CD28F2A4985AE009C57F6 /* TextFieldConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldConfigurator.swift; sourceTree = "<group>"; };
+		274CD2912A4985BE009C57F6 /* TextFieldRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldRouter.swift; sourceTree = "<group>"; };
+		274CD2932A49F50F009C57F6 /* StudiesModelUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudiesModelUseCase.swift; sourceTree = "<group>"; };
+		274CD2952A4A841C009C57F6 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		274CD2972A4A8CCE009C57F6 /* LocalNotification .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalNotification .swift"; sourceTree = "<group>"; };
+		6AA22F4AD91013F59D982D54 /* Pods-PatientDiary-PatientDiaryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatientDiary-PatientDiaryUITests.release.xcconfig"; path = "Target Support Files/Pods-PatientDiary-PatientDiaryUITests/Pods-PatientDiary-PatientDiaryUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6D1FC515FC9E5112DAF73136 /* Pods-PatientDiaryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatientDiaryTests.release.xcconfig"; path = "Target Support Files/Pods-PatientDiaryTests/Pods-PatientDiaryTests.release.xcconfig"; sourceTree = "<group>"; };
+		7D80CE1AF7E24494052B54F1 /* Pods_PatientDiaryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PatientDiaryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		857F3A1555F8B351DD307F7E /* Pods-PatientDiaryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatientDiaryTests.debug.xcconfig"; path = "Target Support Files/Pods-PatientDiaryTests/Pods-PatientDiaryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		959172E7655B83DFB0920231 /* Pods_PatientDiary_PatientDiaryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PatientDiary_PatientDiaryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA784E83B7C1C2D984743490 /* Pods-PatientDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatientDiary.release.xcconfig"; path = "Target Support Files/Pods-PatientDiary/Pods-PatientDiary.release.xcconfig"; sourceTree = "<group>"; };
+		D40E22B2A28754E3982BD181 /* Pods-PatientDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatientDiary.debug.xcconfig"; path = "Target Support Files/Pods-PatientDiary/Pods-PatientDiary.debug.xcconfig"; sourceTree = "<group>"; };
+		DCBDFCB4980A00D75579AF2F /* Pods_PatientDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PatientDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD8B037B5F5747CB5EB4E52A /* Pods_PatientDiary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00653C0E79A35EB1CADAE8BD /* Pods_PatientDiaryTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2B0F5C852BDBF1B1385AFEF /* Pods_PatientDiary_PatientDiaryUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +145,8 @@
 				274CD2412A49473D009C57F6 /* PatientDiaryTests */,
 				274CD24B2A49473D009C57F6 /* PatientDiaryUITests */,
 				274CD2292A49473B009C57F6 /* Products */,
+				6C737D276BD909356F66A22E /* Pods */,
+				7DC860CD93C371EA3917A86A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +163,16 @@
 		274CD22A2A49473B009C57F6 /* PatientDiary */ = {
 			isa = PBXGroup;
 			children = (
+				274CD28A2A498465009C57F6 /* TextFieldView */,
+				274CD2872A4981DF009C57F6 /* Extension */,
+				274CD2822A497959009C57F6 /* CustomCells */,
+				274CD2792A4971AC009C57F6 /* ModelClass */,
+				274CD2702A496DF1009C57F6 /* JSONS */,
+				274CD26D2A4962CD009C57F6 /* CommonUtility */,
+				274CD2642A495DE1009C57F6 /* LoginScreen */,
+				274CD25B2A4952A5009C57F6 /* Dashboard */,
 				274CD22B2A49473B009C57F6 /* AppDelegate.swift */,
 				274CD22D2A49473B009C57F6 /* SceneDelegate.swift */,
-				274CD22F2A49473B009C57F6 /* ViewController.swift */,
 				274CD2312A49473B009C57F6 /* Main.storyboard */,
 				274CD2342A49473D009C57F6 /* Assets.xcassets */,
 				274CD2362A49473D009C57F6 /* LaunchScreen.storyboard */,
@@ -127,6 +198,110 @@
 			path = PatientDiaryUITests;
 			sourceTree = "<group>";
 		};
+		274CD25B2A4952A5009C57F6 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				274CD25C2A495335009C57F6 /* DashboardViewController.swift */,
+				274CD25E2A495BF4009C57F6 /* DashboardViewPresenter.swift */,
+				274CD2602A495C15009C57F6 /* DashboardVieConfigurator.swift */,
+				274CD2622A495CFF009C57F6 /* DashboardViewRouter.swift */,
+				274CD2932A49F50F009C57F6 /* StudiesModelUseCase.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		274CD2642A495DE1009C57F6 /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				274CD22F2A49473B009C57F6 /* ViewController.swift */,
+				274CD2652A495DFB009C57F6 /* LoginRouter.swift */,
+				274CD2672A495E0F009C57F6 /* LoginPresenter.swift */,
+				274CD2692A496215009C57F6 /* LoginViewConfigurator.swift */,
+				274CD26B2A49626C009C57F6 /* Person.swift */,
+				274CD27C2A4973F7009C57F6 /* LoginUsecase.swift */,
+			);
+			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+		274CD26D2A4962CD009C57F6 /* CommonUtility */ = {
+			isa = PBXGroup;
+			children = (
+				274CD26E2A4962E2009C57F6 /* CommonUtilityClass.swift */,
+				274CD27E2A497438009C57F6 /* DBHelper.swift */,
+				274CD2952A4A841C009C57F6 /* Colors.swift */,
+				274CD2972A4A8CCE009C57F6 /* LocalNotification .swift */,
+			);
+			path = CommonUtility;
+			sourceTree = "<group>";
+		};
+		274CD2702A496DF1009C57F6 /* JSONS */ = {
+			isa = PBXGroup;
+			children = (
+				274CD2752A496E96009C57F6 /* Studies.json */,
+			);
+			path = JSONS;
+			sourceTree = "<group>";
+		};
+		274CD2792A4971AC009C57F6 /* ModelClass */ = {
+			isa = PBXGroup;
+			children = (
+				274CD27A2A4971BA009C57F6 /* Studies.swift */,
+			);
+			path = ModelClass;
+			sourceTree = "<group>";
+		};
+		274CD2822A497959009C57F6 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				274CD2832A497973009C57F6 /* StudyTitleCell.swift */,
+				274CD2842A497973009C57F6 /* StudyTitleCell.xib */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		274CD2872A4981DF009C57F6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				274CD2882A498203009C57F6 /* ViewControllerExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		274CD28A2A498465009C57F6 /* TextFieldView */ = {
+			isa = PBXGroup;
+			children = (
+				274CD28B2A498489009C57F6 /* TextFieldController.swift */,
+				274CD28D2A4985A1009C57F6 /* TextFieldPresenter.swift */,
+				274CD28F2A4985AE009C57F6 /* TextFieldConfigurator.swift */,
+				274CD2912A4985BE009C57F6 /* TextFieldRouter.swift */,
+			);
+			path = TextFieldView;
+			sourceTree = "<group>";
+		};
+		6C737D276BD909356F66A22E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D40E22B2A28754E3982BD181 /* Pods-PatientDiary.debug.xcconfig */,
+				AA784E83B7C1C2D984743490 /* Pods-PatientDiary.release.xcconfig */,
+				2474F29C080C8A1C10B2C44D /* Pods-PatientDiary-PatientDiaryUITests.debug.xcconfig */,
+				6AA22F4AD91013F59D982D54 /* Pods-PatientDiary-PatientDiaryUITests.release.xcconfig */,
+				857F3A1555F8B351DD307F7E /* Pods-PatientDiaryTests.debug.xcconfig */,
+				6D1FC515FC9E5112DAF73136 /* Pods-PatientDiaryTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7DC860CD93C371EA3917A86A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				274CD2802A497478009C57F6 /* libsqlite3.tbd */,
+				DCBDFCB4980A00D75579AF2F /* Pods_PatientDiary.framework */,
+				959172E7655B83DFB0920231 /* Pods_PatientDiary_PatientDiaryUITests.framework */,
+				7D80CE1AF7E24494052B54F1 /* Pods_PatientDiaryTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +309,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 274CD2522A49473D009C57F6 /* Build configuration list for PBXNativeTarget "PatientDiary" */;
 			buildPhases = (
+				C161F2A50C485DF77EB808A0 /* [CP] Check Pods Manifest.lock */,
 				274CD2242A49473B009C57F6 /* Sources */,
 				274CD2252A49473B009C57F6 /* Frameworks */,
 				274CD2262A49473B009C57F6 /* Resources */,
+				100690206661DE79732A25B4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +328,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 274CD2552A49473D009C57F6 /* Build configuration list for PBXNativeTarget "PatientDiaryTests" */;
 			buildPhases = (
+				8EB07C59661EDFAA9395610B /* [CP] Check Pods Manifest.lock */,
 				274CD23A2A49473D009C57F6 /* Sources */,
 				274CD23B2A49473D009C57F6 /* Frameworks */,
 				274CD23C2A49473D009C57F6 /* Resources */,
@@ -169,9 +347,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 274CD2582A49473D009C57F6 /* Build configuration list for PBXNativeTarget "PatientDiaryUITests" */;
 			buildPhases = (
+				E198FE22187DF4B8AF73E087 /* [CP] Check Pods Manifest.lock */,
 				274CD2442A49473D009C57F6 /* Sources */,
 				274CD2452A49473D009C57F6 /* Frameworks */,
 				274CD2462A49473D009C57F6 /* Resources */,
+				A2F0F5AAC43B77EA943C5757 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,7 +411,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				274CD2862A497973009C57F6 /* StudyTitleCell.xib in Resources */,
 				274CD2382A49473D009C57F6 /* LaunchScreen.storyboard in Resources */,
+				274CD2762A496E96009C57F6 /* Studies.json in Resources */,
 				274CD2352A49473D009C57F6 /* Assets.xcassets in Resources */,
 				274CD2332A49473B009C57F6 /* Main.storyboard in Resources */,
 			);
@@ -253,6 +435,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		100690206661DE79732A25B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PatientDiary/Pods-PatientDiary-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PatientDiary/Pods-PatientDiary-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PatientDiary/Pods-PatientDiary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EB07C59661EDFAA9395610B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PatientDiaryTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2F0F5AAC43B77EA943C5757 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PatientDiary-PatientDiaryUITests/Pods-PatientDiary-PatientDiaryUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PatientDiary-PatientDiaryUITests/Pods-PatientDiary-PatientDiaryUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PatientDiary-PatientDiaryUITests/Pods-PatientDiary-PatientDiaryUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C161F2A50C485DF77EB808A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PatientDiary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E198FE22187DF4B8AF73E087 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PatientDiary-PatientDiaryUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		274CD2242A49473B009C57F6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -260,7 +545,28 @@
 			files = (
 				274CD2302A49473B009C57F6 /* ViewController.swift in Sources */,
 				274CD22C2A49473B009C57F6 /* AppDelegate.swift in Sources */,
+				274CD27B2A4971BA009C57F6 /* Studies.swift in Sources */,
+				274CD2632A495CFF009C57F6 /* DashboardViewRouter.swift in Sources */,
+				274CD2682A495E0F009C57F6 /* LoginPresenter.swift in Sources */,
+				274CD26C2A49626C009C57F6 /* Person.swift in Sources */,
+				274CD2922A4985BE009C57F6 /* TextFieldRouter.swift in Sources */,
+				274CD2612A495C15009C57F6 /* DashboardVieConfigurator.swift in Sources */,
+				274CD27F2A497438009C57F6 /* DBHelper.swift in Sources */,
+				274CD26A2A496215009C57F6 /* LoginViewConfigurator.swift in Sources */,
 				274CD22E2A49473B009C57F6 /* SceneDelegate.swift in Sources */,
+				274CD2942A49F50F009C57F6 /* StudiesModelUseCase.swift in Sources */,
+				274CD2852A497973009C57F6 /* StudyTitleCell.swift in Sources */,
+				274CD2982A4A8CCE009C57F6 /* LocalNotification .swift in Sources */,
+				274CD2962A4A841C009C57F6 /* Colors.swift in Sources */,
+				274CD25D2A495335009C57F6 /* DashboardViewController.swift in Sources */,
+				274CD28E2A4985A1009C57F6 /* TextFieldPresenter.swift in Sources */,
+				274CD2662A495DFB009C57F6 /* LoginRouter.swift in Sources */,
+				274CD2902A4985AE009C57F6 /* TextFieldConfigurator.swift in Sources */,
+				274CD27D2A4973F7009C57F6 /* LoginUsecase.swift in Sources */,
+				274CD2892A498203009C57F6 /* ViewControllerExtension.swift in Sources */,
+				274CD28C2A498489009C57F6 /* TextFieldController.swift in Sources */,
+				274CD26F2A4962E2009C57F6 /* CommonUtilityClass.swift in Sources */,
+				274CD25F2A495BF4009C57F6 /* DashboardViewPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +738,7 @@
 		};
 		274CD2532A49473D009C57F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D40E22B2A28754E3982BD181 /* Pods-PatientDiary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -460,6 +767,7 @@
 		};
 		274CD2542A49473D009C57F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA784E83B7C1C2D984743490 /* Pods-PatientDiary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -488,6 +796,7 @@
 		};
 		274CD2562A49473D009C57F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 857F3A1555F8B351DD307F7E /* Pods-PatientDiaryTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +817,7 @@
 		};
 		274CD2572A49473D009C57F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D1FC515FC9E5112DAF73136 /* Pods-PatientDiaryTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +838,7 @@
 		};
 		274CD2592A49473D009C57F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2474F29C080C8A1C10B2C44D /* Pods-PatientDiary-PatientDiaryUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +857,7 @@
 		};
 		274CD25A2A49473D009C57F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AA22F4AD91013F59D982D54 /* Pods-PatientDiary-PatientDiaryUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
